@@ -1,0 +1,77 @@
+.calculation-container {
+    width: 800px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+h3 {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.operation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+label {
+    width: 100px;
+    text-align: left;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+input[type="number"], input[type="text"] {
+    width: 200px;
+    padding: 5px;
+    margin: 0 5px;
+    text-align: center;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #999;
+}
+
+.result {
+    width: 50px;
+    text-align: center;
+    padding: 5px;
+    margin-left: 10px;
+    font-weight: bold;
+    border: none;
+    background-color: #f3f3f3;
+}
+
+.recent-calculations {
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    font-size: 14px;
+    margin-top: 30px;
+    display: flex;
+    
+}
+
+.recent-calculation {
+    padding: 5px 0;
+    margin: 5px 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.highlight {
+    color: red; /* Đổi màu phép tính vừa thực hiện */
+}

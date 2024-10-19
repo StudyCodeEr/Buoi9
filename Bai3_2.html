@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Bai3_2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calculation-container">
+        <h3>Các phép toán</h3>
+        
+        <div class="operation">
+            <label>phép cộng</label>
+            <input type="number" id="add1"> +
+            <input type="number" id="add2">
+            <button onclick="calculate('add')">=</button>
+            <input type="text" id="addResult" class="result" readonly>
+        </div>
+    
+        <div class="operation">
+            <label>phép trừ</label>
+            <input type="number" id="sub1"> -
+            <input type="number" id="sub2">
+            <button onclick="calculate('sub')">=</button>
+            <input type="text" id="subResult" class="result" readonly>
+        </div>
+    
+        <div class="operation">
+            <label>phép nhân</label>
+            <input type="number" id="mul1"> *
+            <input type="number" id="mul2">
+            <button onclick="calculate('mul')">=</button>
+            <input type="text" id="mulResult" class="result" readonly>
+        </div>
+    
+        <div class="operation">
+            <label>phép chia</label>
+            <input type="number" id="div1"> /
+            <input type="number" id="div2">
+            <button onclick="calculate('div')">=</button>
+            <input type="text" id="divResult" class="result" readonly>
+        </div>
+    
+        <h3>Các phép toán vừa thực hiện</h3>
+        <div id="recentCalculations" class="recent-calculations">
+            <p class="recent-calculation">PHÉP CỘNG:<br> <span id="recentAdd">0</span></p>
+            <p class="recent-calculation">PHÉP TRỪ:<br> <span id="recentSub">0</span></p>
+            <p class="recent-calculation">PHÉP NHÂN:<br> <span id="recentMul">0</span></p>
+            <p class="recent-calculation">PHÉP CHIA:<br> <span id="recentDiv">0</span></p>
+        </div>
+    </div>
+    
+    <script src="Bai3_2.js"></script>
+</body>
+</html>

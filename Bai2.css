@@ -1,0 +1,43 @@
+.slideshow-container {
+    position: relative;
+    max-width: 800px; /* Đặt kích thước tối đa cho slide */
+    margin: auto; /* Căn giữa slide */
+    overflow: hidden; /* Ẩn phần hình ảnh vượt ra ngoài */
+    border-radius: 10px; /* Bo tròn góc ảnh */
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2); /* Hiệu ứng đổ bóng */
+}
+
+.mySlides {
+    display: none;
+}
+
+.slide-image {
+    width: 100%; /* Đặt ảnh tự động điều chỉnh theo khung */
+    height: auto; /* Đảm bảo tỷ lệ ảnh không bị méo */
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 45%;
+    width: auto;
+    padding: 16px;
+    color: rgb(54, 54, 54);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
